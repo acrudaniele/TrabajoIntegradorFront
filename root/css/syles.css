@@ -1,22 +1,268 @@
-.top{
-    background-color:#222222;
-    color: white;
-    
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.barratop{
+
+.top {
+  background-color: #222222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top p {
+  margin-left: 50px;
+}
+.botones {
+  margin-right: 30px;
+}
+.boton {
+  background-color: #222222;
+  color: white;
+}
+.barratop {
+  background-color: #f0a83e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 62px;
+  align-items: center;
+}
+.logo {
+  width: 166px;
+  height: 23px;
+  margin-left:30px;
+}
+nav{
+    margin-right: 30px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 10px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.titulo {
+  background-image: url("../img/bowl-and-pet-daities-on-green-background\ 1.png");
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+h1 {
+  background-color: white;
+  border-radius: 10px;
+  font-size: 45px;
+  margin: 20px;
+}
+
+.texto-titulo {
+  position: absolute;
+  right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.boton-comederos {
+  background-color: #f0a83e;
+  color: white;
+  width: 120px;
+  height: 60px;
+  border: none;
+  border-radius: 10%;
+  margin: 20px;
+}
+
+.productos-destacados {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.logo-patita {
+  height: 130px;
+  width: 110px;
+}
+#titulo-productos {
+  font-size: 40px;
+  color: #3c2313;
+}
+.productos-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.productos-links li {
+  margin: 20px;
+}
+
+.productos-links li a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.articulos{
+    display:flex;
+    justify-content: center;
+}
+.cada-articulo{
+    background-color: #FBFAF6;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:50px;
+}
+
+h3{
+    color: #3C2313;
+}
+.precio {
+    color: #F0A83E;
+    font-weight: 500;
+}
+
+.contactanos {
+    font-size: 50px;
+    color: #3C2313
+}
+
+.info-contactos {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.formulario {
+    border-radius: 10px;
+    background-color: #3C2313;
+    color: white;
+    width: 700px;
+    height: 80px;
+    margin:10px;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.section-botones {
+    margin: 60px;
+}
+#boton-reset {
+    border: none;
+    color: white;
+    background-color: #8A8787;
+    border-radius: 30px;
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+}
+
+#boton-enviar{
+    border: none;
+    color: white;
     background-color:#F0A83E;
+    border-radius: 30px;
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+}
+
+#suscripcion{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: #F0A83E;
+    align-items: center;
     color: white;
 }
 
-.titulo{
-    background-image: url('../img/bowl-and-pet-daities-on-green-background\ 1.png');
-    background-size:contain;
-    min-width:1024px;
-    width:100%;
-    height: 408px;
-    background-repeat: no-repeat;
+#sobre {
+    margin:5px;
 }
 
-h1{
+#formulario-footer{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#input-form{
     background-color: white;
+    border-radius:20px;
+    color:#A0A0A0;
+    width: 500px;
+    height: 40px;
+    padding: 6px 5px;
+}
+
+#boton-suscripcion{
+    background-color:#3C2313;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    height: 40px;
+    margin: 10px;
+    width: 100px;
+}
+
+#casi-footer {
+    background-color: #3C2313;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#informacion {
+    display: flex;
+    flex-direction: column;
+    justify-self: space-around;
+    margin-left: 50px;
+}
+
+.info {
+    display:flex;
+    margin: 10px;
+}
+
+.texto-info{
+    margin-left:20px;
+}
+
+.futura-info{
+    color: #8A8787;
+}
+.logo-footer {
+    margin-right: 100px;
+    width: 180px;
+    height: 28px;;
+}
+
+#pie {
+    background-color:#222222;
+    color:white;
+    display:flex;
+    justify-content: center;
 }

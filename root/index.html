@@ -5,32 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/syles.css" />
   </head>
   <body>
     <header>
       <section class="top">
-        <p>Grandes ofertas en comedores</p>
-        <button>
-          <ul type="none">
-            <li>español</li>
-          </ul>
-        </button>
-        <button>
-          <ul type="none">
-            <li>$ARG</li>
-          </ul>
-        </button>
+        <p>Grandes ofertas en comederos</p>
+        <section class="botones">
+          <button class="boton">
+            <ul type="none">
+              <li>Español<i class="fa-solid fa-arrow-down"></i></li>
+            </ul>
+          </button>
+          <button class="boton">
+            <ul type="none">
+              <li>$ARG <i class="fa-solid fa-arrow-down"></i></li>
+            </ul>
+          </button>
+        </section>
       </section>
       <section class="barratop">
-        <img src="./img/Logo.png" alt="logo" />
+        <img class="logo" src="./img/Logo.png" alt="logo" />
         <nav>
-          <ul type="none">
-            <li><a href=""><i class="fas fa-paw"></i>Categorías </a></li>
-            <li><a href=""><i class="fas fa-paw"></i>Pets </a></li>
-            <li><a href=""><i class="fas fa-paw"></i>Nosotros </a></li>
-            <li><a href=""><i class="fas fa-paw"></i>Contactanos </a></li>
+          <ul>
+            <li>
+              <a href=""><i class="fas fa-paw"></i>Categorías </a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-paw"></i>Pets </a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-paw"></i>Nosotros </a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-paw"></i>Contactanos </a>
+            </li>
           </ul>
         </nav>
       </section>
@@ -38,47 +54,88 @@
 
     <main>
       <section class="titulo">
-        <h1>¡Es un placer tenerte aquí!</h1>
-        <p>¡Comederos en descuentos!</p>
-        <button>COMEDEROS</button>
+        <section class="texto-titulo">
+          <h1>¡Es un placer tenerte aquí!</h1>
+          <p>¡Comederos en descuentos!</p>
+          <button class="boton-comederos">COMEDEROS</button>
+        </section>
       </section>
-      <section>
-        <center>
-        <article class="articulo">
-          <img src="./img/pawprint 1.png" alt="logo de una patita de perro" />
-          <h2>Productos Destacados</h2>
-          <nav>
-            <ul type="none">
+      
+        <article class="productos-destacados">
+          <img class="logo-patita" src="./img/pawprint 1.png" alt="logo de una patita de perro" />
+          <h2 id="titulo-productos">Productos Destacados</h2>
+            <ul class="productos-links">
               <li><a href="#">Comederos</a></li>
               <li><a href="#">Accesorios</a></li>
-              <li><a href="#">Comida</a></li>
-            </ul>
-          </nav>
-        </center>
+              <li><a href="#">Comida</a></li> 
+            <ul>
         </article>
-        <article>
+        <section class="articulos">
+        <article class="cada-articulo">
           <img src="./img/churrasquito.png" alt="juguete de churrasquito" />
           <h3>Juguete Churrasquito</h3>
-          <p>$150</p>
+          <p class="precio">$150</p>
         </article>
-        <article>
+        <article class="cada-articulo">
           <img src="./img/comedero.png" alt="Comedero para perro" />
           <h3>Comedero para perro</h3>
-          <p>$250</p>
+          <p class="precio">$250</p>
         </article>
-        <article>
+        <article class="cada-articulo">
           <img src="./img/Huesito.png" alt="Juguete de huesito" />
           <h3>Juguete Huesito</h3>
-          <p>$650</p>
+          <p class="precio">$650</p>
         </article>
       </section>
 
-      <section>
-        <h2>Contáctanos</h2>
-      
+      <section class="info-contactos">
+        <h2 class="contactanos">Contáctanos</h2>
+        <article class="formulario"><p>Nombre y apellido</p></article>
+        <article class="formulario"><p>Ingresá tu correo electrónico</p></article>
+        <article class="formulario"><p>Teléfono</p></article>
+        <section class="section-botones">
+          <button id="boton-reset">Resetear</button>
+          <button id="boton-enviar">Enviar</button>
+        </section>
       </section>
     </main>
-    <footer>
+    <section id="suscripcion">
+        
+        <h2> <i id="sobre" class="fa-regular fa-envelope"></i></i>Suscríbete para más novedades </h2>
+      <section id="formulario-footer">
+        <p id="input-form">Ingresá tu correo electrónico</p>
+        <button id="boton-suscripcion">Suscribirme</button>
+
+      </section>
+    </section>
+    <section id="casi-footer">
+      <section id="informacion">
+        <section class="info">
+          <img id="ubi" src="./img/icono ubi.png" alt="icono de ubicacion">
+          <section class="texto-info">
+            <h2>Localidad</h2>
+            <p class="futura-info">Calle - Provincia</p>
+          </section>
+        </section>
+        <section class="info">
+          <img id="tel" src="./img/icono llamada.png" alt="icono un telefono">
+          <section class="texto-info">
+            <h2>Teléfono</h2>
+            <p class="futura-info">Número de teléfono</p>
+          </section>
+        </section>
+        <section class="info">
+          <img id="mail" src="./img/icono mail.png" alt="icono de un mail">
+          <section class="texto-info">
+            <h2>Correo electrónico</h2>
+            <p class="futura-info">Dirección de correo</p>
+          </section>
+        </section>
+      </section>
+      <img class="logo-footer" src="./img/logo-footer.png" alt="Logo de la marca">
+    </section>
+
+    <footer id="pie">
       <p>Todos los derechos reservados Front End</p>
     </footer>
   </body>
